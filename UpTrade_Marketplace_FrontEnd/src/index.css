@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Work Sans", sans-serif;
+
+  --color-primary: #2b2b2b;
+  --color-secondary: #3b3b3b;
+  --color-tertiary: #a259ff;
+
+  --text-tprimary: #ffffff;
+  --text-tsecondary: #cccccc;
+  --text-ttertiary: #a259ff;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #3b3b3b;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.3s ease-out;
+}
